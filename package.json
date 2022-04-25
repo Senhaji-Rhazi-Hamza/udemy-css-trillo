@@ -1,0 +1,21 @@
+{
+  "name": "udemy-css-trillo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassw": "node-sass sass/main.scss  css/style.css -w",
+    "csass": "node-sass sass/main.scss  css/style.comp.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Senhaji-Rhazi-Hamza/udemy-css-trillo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Senhaji-Rhazi-Hamza/udemy-css-trillo/issues"
+  },
+  "homepage": "https://github.com/Senhaji-Rhazi-Hamza/udemy-css-trillo#readme"
+}
