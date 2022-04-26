@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sassw": "node-sass sass/main.scss  css/style.css -w",
+    "devserver": "live-server",
     "csass": "node-sass sass/main.scss  css/style.comp.css"
   },
   "repository": {
