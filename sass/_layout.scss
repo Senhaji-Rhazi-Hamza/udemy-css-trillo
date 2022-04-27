@@ -1,9 +1,12 @@
-.container {
-    background-color: rebeccapurple;
-    margin: 8rem 10rem;
-    min-height: 50rem;
-}
+// .container {
+//     background-color: rebeccapurple;
+//     margin: 8rem 10rem;
+//     min-height: 50rem;
+// }
 .header {
     background-color: white;
     height: 7rem;
+    display: flex;
+    align-items: center;
 }
+

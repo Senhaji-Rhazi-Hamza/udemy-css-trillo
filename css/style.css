@@ -28,11 +28,43 @@ body {
   min-height: 100vh;
   background: linear-gradient(to right bottom, #eb2f64, #BA265D); }
 
-.container {
-  background-color: rebeccapurple;
-  margin: 8rem 10rem;
-  min-height: 50rem; }
-
 .header {
   background-color: white;
-  height: 7rem; }
+  height: 7rem;
+  display: flex;
+  align-items: center; }
+
+.logo {
+  width: 3rem;
+  height: 3rem; }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    width: 90%;
+    border: none;
+    border-radius: 100px;
+    margin-right: -3rem;
+    background-color: var(--color-grey-light-2);
+    padding: 0.7rem 2rem; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3); }
+  .search__button {
+    border: none;
+    background-color: var(--color-grey-light-2); }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    width: 2rem;
+    height: 1.75rem;
+    fill: var(--color-grey-dark-3); }
