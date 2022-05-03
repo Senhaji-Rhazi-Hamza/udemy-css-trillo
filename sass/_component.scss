@@ -20,7 +20,7 @@
         margin-right: -3rem;
         background-color:  var(--color-grey-light-2);
         padding: 0.7rem 2rem;
-
+        transition: all .4s;
         // border: none;
         &:focus {
             outline: none;
@@ -79,7 +79,7 @@
     &__notification {
         position: absolute;
         left: 2.2rem;
-        top: 0.1rem;
+        top: 2.9rem;
         display: flex;
         background-color: red;
         align-items: center;
@@ -96,7 +96,6 @@
         align-items: center;
         background-color: red;
     }
-
     &__user-photo {
         // width: 100%;
         margin-right: 1rem;
@@ -108,4 +107,55 @@
 .nav-text {
     background-color: red;
     color: blue;
+}
+
+.side-nav {
+    font-size: 1.4rem;
+    list-style: none;
+    margin-top: 3.5rem;
+    &__item {
+        position: relative;
+    }
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-primary);
+        transform: scaleY(0);
+        transition: transform .2s,
+                    width .4s cubic-bezier(1, 0, 0, 1) .2s,
+                    background-color .1s;
+
+
+    }
+    &__item:hover::before {
+        transform: scaleY(1);
+        width: 100%;
+    }
+    &__item:active::before {
+        background-color: var(--color-primary-light);
+    }
+    &__link:link,
+    &__link:visited {
+        padding: 1.5rem 3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--color-grey-light-1);
+        z-index: 10;
+        position: relative;
+    }
+
+
+    &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 2rem;
+        fill: gray;
+    }
 }
