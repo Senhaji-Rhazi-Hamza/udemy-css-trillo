@@ -50,6 +50,10 @@ body {
   background-color: #353535;
   display: flex; }
 
+.hotel-view {
+  background-color: gray;
+  flex: 1; }
+
 .logo {
   width: 3rem;
   height: 3rem; }
@@ -168,3 +172,48 @@ body {
     width: 1.5rem;
     margin-right: 2rem;
     fill: gray; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    height: 100%; }
+
+.overview {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  min-height: 4rem; }
+  .overview__heading {
+    font-weight: 200;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 160%;
+    color: gray;
+    background-color: transparents; }
+  .overview__stars {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    background-color: aquamarine; }
+  .overview__icon-star {
+    width: 2rem;
+    height: 2rem;
+    fill: pink; }
+  .overview__icon-location {
+    width: 2rem;
+    height: 2rem;
+    fill: #ffc0e5; }
+  .overview__item {
+    width: 2rem;
+    height: 2rem; }
+  .overview__location {
+    display: flex; }
+
+.btn-inline {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer; }
