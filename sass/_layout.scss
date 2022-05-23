@@ -27,3 +27,20 @@
     background-color: var(--color-grey-light-3);
     flex: 1;
 }
+
+.description {
+    flex: 0 0 60%;
+    background-color: white;
+    display: flex;
+    padding: 3rem;
+    font-size: 140%;
+    color: gray;
+    flex-direction: column;
+}
+
+.reviews-layout{
+    flex: 1;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+}
