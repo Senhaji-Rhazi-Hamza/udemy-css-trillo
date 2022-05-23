@@ -51,7 +51,7 @@ body {
   display: flex; }
 
 .hotel-view {
-  background-color: gray;
+  background-color: var(--color-grey-light-3);
   flex: 1; }
 
 .logo {
@@ -182,12 +182,23 @@ body {
 .overview {
   display: flex;
   background-color: white;
-  align-items: center;
-  min-height: 4rem; }
+  align-items: center; }
+  .overview__rating-square {
+    background-color: var(--color-primary-light);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 2rem;
+    align-items: center;
+    color: white; }
+  .overview__rating-note {
+    font-size: 200%;
+    font-weight: 400; }
   .overview__heading {
     font-weight: 200;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+    letter-spacing: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 160%;
@@ -196,16 +207,15 @@ body {
   .overview__stars {
     display: flex;
     align-items: center;
-    margin-right: auto;
-    background-color: aquamarine; }
+    margin-right: auto; }
   .overview__icon-star {
     width: 2rem;
     height: 2rem;
-    fill: pink; }
+    fill: var(--color-primary-light); }
   .overview__icon-location {
     width: 2rem;
     height: 2rem;
-    fill: #ffc0e5; }
+    fill: var(--color-primary-light); }
   .overview__item {
     width: 2rem;
     height: 2rem; }
@@ -216,4 +226,58 @@ body {
   border: none;
   background-color: transparent;
   border-bottom: 1px solid currentColor;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: transparent;
+  padding-bottom: 1px; }
+
+.details {
+  display: flex;
+  background-color: transparent;
+  margin: 3rem;
+  height: 80rem; }
+
+.description {
+  flex: 0 0 60%;
+  background-color: white;
+  display: flex;
+  padding: 3rem;
+  font-size: 140%;
+  color: gray;
+  flex-direction: column; }
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.list {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center; }
+  .list__item {
+    display: flex;
+    flex: 0 0 50%;
+    justify-content: center; }
+  .list__icon-item {
+    margin-right: .5rem;
+    fill: currentColor;
+    font-weight: bolder;
+    width: 1.5rem;
+    height: 1.5rem; }
+
+.recommend {
+  display: flex;
+  align-items: center; }
+  .recommend__text-count {
+    margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
+  .recommend__friends-photo {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-left: -1.5rem; }
